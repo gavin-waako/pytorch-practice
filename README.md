@@ -1,12 +1,9 @@
 # PyTorch Learning Tutorial
 
-A comprehensive PyTorch tutorial designed for learning and interview preparation.
+The Complete PyTorch Curriculum for learning the basics of creating and manipulating tensors to more advanced operations.
 
 ## Overview
-Welcome to the **PyTorch Mastery** repository! This project is a curated collection of foundational exercises designed to take you from a complete beginner to a confident practitioner. Whether you are learning for personal growth or preparing for a technical AI/ML interview, these resources provide the hands-on practice needed to master the framework.
-
-## 📌 Overview
-This repository serves as a **Complete PyTorch Curriculum**, moving from the absolute basics of tensor creation to more advanced manipulation and operations. Tensors are the fundamental building blocks of deep learning, and mastering them is essential for building and debugging complex neural networks.
+This repository serves as a **PyTorch Practice**, helping you move from the absolute basics of tensor creation to more advanced manipulation and operations using PyTorch. Tensors are the fundamental building blocks of deep learning, and mastering them is essential for building and debugging complex neural networks. Whether you are learning as a Computer Science student or preparing for a technical career in AI/ML research, this resource will guide you on what to cover in order to master the framework.
 
 ## Tutorial Structure
 
@@ -44,4 +41,4 @@ Based on the code covered, these are the 3 main issues you will face in PyTorch:
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/your-username/pytorch-practice.git](https://github.com/your-username/pytorch-practice.git)
+git clone [https://github.com/gavin-waako/pytorch-practice.git](https://github.com/gavin-waako/pytorch-practice.git)
