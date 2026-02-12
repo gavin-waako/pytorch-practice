@@ -1,39 +1,54 @@
-# pytorch-practice
+# PyTorch Learning Tutorial
 
-## PyTorch Deep Dive: Fundamentals of Tensor Operations
-Welcome to the **PyTorch Mastery** repository! This project is a curated collection of foundational exercises designed to take you from a complete beginner to a confident practitioner. Whether you are learning for personal growth or preparing for a technical AI/ML interview, these resources provide the hands-on practice needed to master the framework.
+A comprehensive PyTorch tutorial designed for learning and interview preparation.
 
-## 📌 Overview
-This repository serves as a **Complete PyTorch Curriculum**, moving from the absolute basics of tensor creation to more advanced manipulation and operations. Tensors are the fundamental building blocks of deep learning, and mastering them is essential for building and debugging complex neural networks.
+## Overview
+This tutorial covers PyTorch fundamentals through advanced topics commonly asked in machine learning engineer interviews. It bridges the gap between basic tensor manipulation and the complex architectural implementations required for senior ML roles.
+
+## Tutorial Structure
+
+### Part 1: Tensor Basics (`01_tensor_basics.py`)
+Based on the foundational exercises in `pytorch_practice.py`:
+* **Creating and manipulating tensors**: Initializing scalars, vectors, matrices, and multi-dimensional tensors using `torch.tensor()`.
+* **Basic operations and broadcasting**: Performing element-wise addition, subtraction, and multiplication.
+* **Randomization & Images**: Generating random tensors and image-like structures (e.g., `[224, 224, 3]`).
+* **Metadata & Precision**: Inspecting `.shape`, `.ndim`, and managing `dtype` (float32 vs. float16).
+* **Device Management**: Handling tensors on CPU vs. GPU/CUDA.
 
 
 
-## 🚀 Key Learning Modules
-Based on the `pytorch_practice.py` script, this curriculum covers:
+### Part 2: Autograd and Gradients (`02_autograd_gradients.py`)
+* **Automatic differentiation**: Understanding how PyTorch tracks operations.
+* **Gradient computation**: Using `.backward()` to compute slopes.
+* **Gradient flow control**: Using `requires_grad=False` to freeze layers during training.
+* **Common interview scenarios**: Explaining the "Zero Grad" step in training loops.
 
-### 1. Tensor Creation & Initialization
-* **Basic Structures**: Creating scalars, vectors, matrices, and multi-dimensional tensors using `torch.tensor()`.
-* **Randomization**: Generating tensors with random values, including specific shapes used in computer vision, such as `[224, 224, 3]` for images.
-* **Specialized Tensors**: Initializing data with `torch.zeros()`, `torch.ones()`, and creating ranges with `torch.arange()`.
-* **Replication**: Using `torch.zeros_like()` to create tensors that mimic the shape of existing data.
+### Part 3: Neural Networks (`03_neural_networks.py`)
+* **Building with `nn.Module`**: Creating custom classes for model architectures.
+* **Activation & Loss functions**: Implementing ReLU, Softmax, and Cross-Entropy.
+* **Training loops**: Standard patterns for forward passes and optimization.
+* **Complete XOR problem**: A classic implementation to demonstrate non-linear boundaries.
 
-### 2. Metadata & Inspection
-* **Attributes**: Mastering the use of `.ndim`, `.shape`, and `.device` to inspect your data.
-* **Datatypes**: Managing precision through `dtype` (e.g., `torch.float32` vs `torch.float16`) to optimize memory and performance.
+### Part 4: Interview Problems (`04_interview_problems.py`)
+* **Custom Dataset & DataLoader**: Implementing efficient data pipelines.
+* **Batch Normalization**: Understanding internal covariate shift.
+* **Gradient clipping**: Solving the exploding gradient problem.
+* **Memory optimization**: Using `torch.inference_mode()` and clearing the cache.
 
-### 3. Tensor Manipulations & Operations
-* **Basic Arithmetic**: Element-wise addition, subtraction, multiplication, and division using both operators (e.g., `+`, `*`) and built-in functions like `torch.add()` or `torch.mul()`.
-* **Advanced Operations**: Introduction to matrix multiplication, a core requirement for neural network layers.
+### Part 5: Advanced Topics (`05_advanced_topics.py`)
+* **Attention mechanisms**: Multi-Head Attention implementation.
+* **Mixed precision training**: Using `torch.cuda.amp` for faster training with less memory.
+* **Model quantization**: Reducing model size for edge deployment.
+* **Dynamic computation graphs**: Explaining how PyTorch differs from static graph frameworks.
 
-## 🛠 Troubleshooting the "Big Three"
-Deep learning bugs often stem from three specific areas. This guide provides the tools to identify and solve them:
+---
 
-* **Wrong Datatype**: Ensuring tensors are in the correct precision for the operation.
-* **Wrong Shape**: Aligning dimensions for operations like matrix multiplication.
-* **Wrong Device**: Verifying if tensors are on the same device (CPU vs. GPU/CUDA).
+## Quick Start
 
-## 💻 Getting Started
-
-**1. Clone the repository:**
+### Option 1: Run Individual Parts
 ```bash
-git clone [https://github.com/gavin-waako/pytorch-practice.git](https://github.com/gavin-waako/pytorch-practice.git)
+python 01_tensor_basics.py
+python 02_autograd_gradients.py
+python 03_neural_networks.py
+python 04_interview_problems.py
+python 05_advanced_topics.py
