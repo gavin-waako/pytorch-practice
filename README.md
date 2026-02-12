@@ -31,7 +31,7 @@ Covers the fundamental mathematical operations required for model training:
 
 
 
-## 🛠 Troubleshooting the "Big Three"
+## Troubleshooting the "Big Three"
 Based on the code covered, these are the 3 main issues you will face in PyTorch:
 1. **Wrong Datatype**: Tensors must be in the correct precision (e.g., `float32`).
 2. **Wrong Shape**: Aligning dimensions for operations like matrix multiplication.
@@ -41,4 +41,4 @@ Based on the code covered, these are the 3 main issues you will face in PyTorch:
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/gavin-waako/pytorch-practice.git](https://github.com/gavin-waako/pytorch-practice.git)
+git clone https://github.com/gavin-waako/pytorch-practice.git
