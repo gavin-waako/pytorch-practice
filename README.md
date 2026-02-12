@@ -1,4 +1,4 @@
-# PyTorch Learning Tutorial
+# PyTorch Practice
 
 The Complete PyTorch Curriculum for learning the basics of creating and manipulating tensors to more advanced operations.
 
